@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'http://localhost:3001';
+const baseURL = 'https://agro-cornejo.site';
 
 // Propiedades
 export const fetchProperties = () => axios.get(`${baseURL}/propiedades`);
