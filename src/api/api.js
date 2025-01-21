@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://agro-cornejo.site';
+const baseURL = '/api';
 
 // Propiedades
 export const fetchProperties = () => axios.get(`${baseURL}/propiedades`);

@@ -14,8 +14,9 @@ const PropertyTable = () => {
     useEffect(() => {
         fetchProperties()
             .then(response => {
-                const data = response.data.map((property) => ({
-                    id: property.id,
+                console.log('Respuesta de la API:', response.data);
+                const data = response.data.map((property, index) => ({
+                    id: property.id || `generated-${index}`,
                     address: property.address,
                     status: property.status || 'N/A',
                     value: property.value,
